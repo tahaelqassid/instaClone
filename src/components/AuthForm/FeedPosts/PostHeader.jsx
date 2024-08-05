@@ -16,7 +16,7 @@ export const PostHeader = ({username,avatar}) => {
 
     </Flex>
     <Box
-    cursor={"pinter"}
+    cursor={"pointer"}
     >
         <Text fontSize={12}
         color={"blue.500"}

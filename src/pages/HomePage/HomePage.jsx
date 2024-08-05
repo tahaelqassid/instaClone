@@ -1,5 +1,6 @@
 import { Container, Flex,Box} from "@chakra-ui/react"
 import FeedPosts from "../../components/AuthForm/FeedPosts/FeedPosts"
+import { SuggestedUsers } from "../../components/AuthForm/SuggestedUsers/SuggestedUsers"
 
 
 
@@ -20,7 +21,7 @@ const HomePage = () => {
 
       
       >
-        suggested
+        <SuggestedUsers />
         </Box>
         </Flex>
         </Container>

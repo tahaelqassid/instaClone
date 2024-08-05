@@ -3,6 +3,8 @@ import SideBar from "../../components/AuthForm/SideBar/SideBar"
 import { useLocation } from "react-router-dom"
 
 
+
+
 const PageLayout = ({children}) => {
     const {pathname}= useLocation()
   return (
