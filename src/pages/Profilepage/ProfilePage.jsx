@@ -3,6 +3,7 @@ import ProfileTabs from "../../components/Profile/ProfileTabs"
 import ProfilePosts from "../../components/Profile/ProfilePosts"
 import ProfileHeader from "../../components/Profile/ProfileHeader"
 
+
 const ProfilePage = () => {
   return (
     <Container maxW="container.lg" py={5}>
@@ -26,7 +27,10 @@ const ProfilePage = () => {
         direction={"column"}
         fontWeight={"bold"}>
 
-            <ProfileTabs/>
+
+
+
+            <ProfileTabs />
             <ProfilePosts />
 
         </Flex>

@@ -3,18 +3,26 @@ import FeedPost from './FeedPost'
 import { useEffect, useState } from 'react'
 
 
+
 const FeedPosts = () => {
+
+
+
     const [isLoading,setIsLoading]= useState(true)
 
     useEffect(() => {
+
         setTimeout(() =>{
             setIsLoading(false)
         },2000)
 
     },[])
+
+
   return (
 
     <Container maxW={"container.sm"} py={10} px={2}>
+
         {isLoading && [0,1,2,3].map((_,idx) => (
             <VStack key={idx} gap={4} alignItems={"flex-start"} mb={10}>
                 <Flex gap={2}>
@@ -36,8 +44,10 @@ const FeedPosts = () => {
         ) )}
 
         {!isLoading && (
+
+
             <>
-            <FeedPost img="/img1.png "username="tahaelqassid" avatar="/profilepic" />
+            <FeedPost img="/img1.png "username="tahaelqassid" avatar="/profilepic.png"/>
 
             <FeedPost img="/img2.png "username="AhmedQassid" avatar="/img2.png" />
             <FeedPost img="/img3.png "username="salmaQassid" avatar="/img3.png" />
@@ -46,7 +56,10 @@ const FeedPosts = () => {
             <FeedPost img="/img4.png "username="maissaaQassid" avatar="/img4.png" />
 
             </>
+
         )}
+
+
         
 
     </Container>
